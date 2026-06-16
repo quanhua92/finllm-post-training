@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.DS_Store
+.ruff_cache/
+.venv/
+venv/
+
+# Data dumps (fetched locally from aipa)
+*.txt
+ohlcv*.txt
+
+# Built datasets & scores (regenerated)
+build/
+outputs*/
+*_train.jsonl
+*_eval.jsonl
+scores_summary.json
+**/_scores.jsonl
+
+# Filled teacher folders are tracked by default; uncomment to ignore large runs:
+# data/*/
+
+# Model artifacts (never commit)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+adapters/
+qwen-finance-*/
+
+# Env / logs
+.env
+*.log
+
+# Temp files
+tmp/
